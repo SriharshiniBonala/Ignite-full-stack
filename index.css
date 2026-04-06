@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Animations ===== */
+
+/* Slide Up */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(60px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-slideUp {
+  animation: slideUp 0.8s ease forwards;
+}
+
+/* Slide Left */
+@keyframes slideLeft {
+  from { opacity: 0; transform: translateX(-60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.animate-slideLeft {
+  animation: slideLeft 0.8s ease forwards;
+}
+
+/* Slide Right */
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.animate-slideRight {
+  animation: slideRight 0.8s ease forwards;
+}
+
+/* Slide Down */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-slideDown {
+  animation: slideDown 0.8s ease forwards;
+}
+
+/* Fade In */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fadeIn {
+  animation: fadeIn 1s ease forwards;
+}
+
+
+/* ===== Glass Card ===== */
+.glass-card {
+  @apply backdrop-blur-lg bg-white/70 border border-gray-200 rounded-xl shadow-lg p-6 transition duration-500;
+}
+
+.card-img {
+  @apply w-full h-48 object-cover rounded-lg mb-4;
+}
+
+.card-title {
+  @apply text-xl font-semibold mb-2;
+}
+
+.card-text {
+  @apply text-gray-600 text-sm;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease forwards;
+}
